@@ -1,0 +1,33 @@
+import { ComponentInterface } from '../../../stencil-public-runtime';
+import { BalMutationObserver } from '../../../utils/mutation';
+import { EventEmitter } from '../../../stencil-public-runtime';
+export declare class Field implements ComponentInterface, BalMutationObserver {
+  el: HTMLElement;
+  private fieldId;
+  private formControlElement;
+  private inputElements;
+  private formElements;
+  required?: boolean;
+  requiredHandler(): void;
+  invalid?: boolean;
+  invalidHandler(): void;
+  valid: boolean;
+  validHandler(): void;
+  disabled?: boolean;
+  disabledHandler(): void;
+  readonly?: boolean;
+  readonlyHandler(): void;
+  loading?: boolean;
+  loadingHandler(): void;
+  balFormControlDidLoad: EventEmitter<BalEvents.BalFieldAriaLabelledByDetail>;
+  connectedCallback(): void;
+  componentWillLoad(): void;
+  componentDidLoad(): Promise<void>;
+  syncAriaAttributes(): Promise<void>;
+  mutationObserverActive: boolean;
+  mutationListener(): void;
+  private triggerAllHandlers;
+  private updateProps;
+  private notifyComponents;
+  render(): any;
+}

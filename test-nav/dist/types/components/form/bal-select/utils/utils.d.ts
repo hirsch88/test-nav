@@ -1,0 +1,11 @@
+import { BalOptionController } from '../bal-select';
+export declare function getValues(values: string[] | undefined): string[];
+export declare function length(values?: string[]): number;
+export declare function removeValue(values: string[] | undefined, valueToRemove: string): string[];
+export declare function addValue(values: string[] | undefined, valueToAdd: string, hasMultipleValue: boolean): string[];
+export declare function validateAfterBlur(values: string[] | undefined, options: Map<string, BalOptionController>, typedLabel: string): string[];
+export declare function findOptionByLabel(options: Map<string, BalOptionController>, label: string): BalOptionController | undefined;
+export declare function findLabelByValue(options: Map<string, BalOptionController>, value: string): string;
+export declare function startsWith(text: string, input: string): boolean;
+export declare function includes(text: string, input: string): boolean;
+export declare function preventDefault(ev: Event): void;

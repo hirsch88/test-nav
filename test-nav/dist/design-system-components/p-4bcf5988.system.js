@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){var s=e("i",{de:{close:"Schliessen"},en:{close:"close"},fr:{close:"Fermer"},it:{close:"Chiudi"},nl:{close:"Sluiten"},es:{close:"Cerrar"},pl:{close:"Zamknij"},pt:{close:"Fechar"},sv:{close:"Stäng"},fi:{close:"Sulje"}})}}}));

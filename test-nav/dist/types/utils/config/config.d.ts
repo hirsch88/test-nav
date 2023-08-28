@@ -1,0 +1,31 @@
+import { BalLogger } from '../log';
+import { BalConfig, BalIcons, BalLanguage, BalRegion } from './config.types';
+import { BalConfigObserver } from './observable/observer';
+export declare class Config {
+  private _componentObservers;
+  private _observers;
+  private _config;
+  get locale(): string;
+  get region(): BalRegion;
+  set region(region: BalRegion);
+  get language(): BalLanguage;
+  set language(language: BalLanguage);
+  get allowedLanguages(): BalLanguage[];
+  set allowedLanguages(allowedLanguages: BalLanguage[]);
+  get icons(): BalIcons;
+  set icons(icons: BalIcons);
+  get logger(): BalLogger;
+  set logger(logger: BalLogger);
+  get animated(): boolean;
+  set animated(animated: boolean);
+  attach(observer: BalConfigObserver): void;
+  detach(observer: BalConfigObserver): void;
+  attachComponent(observer: BalConfigObserver): void;
+  detachComponent(observer: BalConfigObserver): void;
+  toString(): string;
+  reset(config: BalConfig): void;
+  private _notify;
+}
+export declare const config: Config;
+export declare const configFromSession: (win: Window) => any;
+export declare const saveConfig: (win: Window, c: any) => void;

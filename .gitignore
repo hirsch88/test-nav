@@ -1,5 +1,7 @@
-/www/components
-/www/test
+/test-nav/components
+/test-nav/test
+/test-nav/build
+/test-nav/loader
 ¨
 *.png
 *.svg

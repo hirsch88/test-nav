@@ -1,0 +1,1 @@
+import{r as a,h as s,H as r}from"./p-e85eaa4e.js";import{B as t}from"./p-61996a75.js";const n=class{constructor(s){a(this,s)}render(){const a=t.block("nav").element("main").element("head");return s(r,{class:Object.assign({},a.class())},s("slot",null))}};export{n as bal_navigation_main_head}

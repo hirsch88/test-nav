@@ -1,0 +1,97 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+const index = require('./index-1009f308.js');
+const bem = require('./bem-5d122a5c.js');
+const index$1 = require('./index-e6a233be.js');
+
+const balDataCss = ":root{--bal-data-item-border-color:var(--bal-color-grey-2);--bal-data-item-border-style:solid;--bal-data-item-border-width:var(--bal-border-width-normal);--bal-data-horizontal-border-bottom-width:var(--bal-border-width-normal);--bal-data-horizontal-border-color:var(--bal-color-primary-2);--bal-data-item-border-bottom:none;--bal-data-item-text-color-disabled:var(--bal-color-text-grey-dark);--bal-data-label-text-color:var(--bal-color-text-primary)}.bal-data{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;max-width:100%;width:100%;outline:none;text-decoration:none;overflow-wrap:break-word;white-space:normal}.bal-data>*{display:-ms-flexbox;display:flex;-ms-flex:1 1;flex:1 1;-ms-flex-wrap:wrap;flex-wrap:wrap}.bal-data-item{display:-ms-flexbox;display:flex;-ms-flex:1 1;flex:1 1;min-height:48px;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:16px 0}.bal-data-item.is-disabled .bal-data-label,.bal-data-item.is-disabled .bal-data-value{color:var(--bal-data-item-text-color-disabled)}.bal-data-item--has-border{border-bottom:var(--bal-data-item-border-width) var(--bal-data-item-border-style) var(--bal-data-item-border-color)}.bal-data-label{position:relative;display:block;color:var(--bal-data-label-text-color);-ms-flex:1 1;flex:1 1;-ms-flex-preferred-size:100%;flex-basis:100%;font-family:var(--bal-font-family-text);font-weight:var(--bal-weight-bold);font-size:var(--bal-size-small);line-height:var(--bal-size-normal);-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}.bal-data-label .bal-hint{margin-left:8px;position:absolute;top:-3px;font-weight:var(--bal-weight-regular)}.bal-data-value{display:block;-ms-flex:1 1;flex:1 1;-ms-flex-preferred-size:100%;flex-basis:100%;margin-top:4px;min-height:1.5rem;overflow:visible !important;font-family:var(--bal-font-family-text);font-weight:var(--bal-weight-bold);font-size:var(--bal-size-small);line-height:var(--bal-size-normal)}.bal-data-value,.bal-data-value>div{font-family:var(--bal-font-family-text);font-weight:var(--bal-weight-regular);font-size:var(--bal-size-normal);line-height:1.25rem;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;padding-bottom:2px}.bal-data-value>ul,.bal-data-value>div>ul{margin-bottom:0 !important;margin-left:1.5rem !important}.bal-data-value .bal-button{display:none}.bal-data-value--is-multiline,.bal-data-value--is-multiline>div{white-space:normal}.bal-data:not(.bal-data--is-horizontal) .bal-data-value{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.bal-data:not(.bal-data--is-horizontal) .bal-data-value>div{-ms-flex:1;flex:1}.bal-data:not(.bal-data--is-horizontal) .bal-data-value>div>bal-input input.input{-ms-flex:1;flex:1}.bal-data:not(.bal-data--is-horizontal) .bal-data-value--is-editable .bal-data-value__button{display:block}.bal-data:not(.bal-data--is-horizontal) .bal-data-value>bal-button{margin-left:8px}@media screen and (min-width: 769px),print{.bal-data>*{-ms-flex-wrap:no-wrap;flex-wrap:no-wrap}.bal-data .bal-data-item{-ms-flex-wrap:no-wrap;flex-wrap:no-wrap;padding:8px 0}.bal-data .bal-data-item .bal-data-label{-ms-flex-preferred-size:0;flex-basis:0}.bal-data .bal-data-item .bal-data-value{-ms-flex-preferred-size:0;flex-basis:0}.bal-data:not(.bal-data--is-horizontal) .bal-data-label{font-size:var(--bal-size-normal)}.bal-data:not(.bal-data--is-horizontal) .bal-data-value{margin-top:2px}.bal-data.bal-data--is-horizontal{-ms-flex-direction:row;flex-direction:row;gap:8px}.bal-data.bal-data--is-horizontal.has-border{border-bottom:var(--bal-data-horizontal-border-bottom-width) var(--bal-data-item-border-style) var(--bal-data-horizontal-border-color)}.bal-data.bal-data--is-horizontal>*{-ms-flex-wrap:wrap;flex-wrap:wrap}.bal-data.bal-data--is-horizontal .bal-data-item{-ms-flex-wrap:wrap;flex-wrap:wrap;min-width:80px;-ms-flex-align:start;align-items:flex-start;border-bottom:var(--bal-data-item-border-bottom)}.bal-data.bal-data--is-horizontal .bal-data-item .bal-data-value{min-height:100%}.bal-data.bal-data--is-horizontal .bal-data-item .bal-data-label,.bal-data.bal-data--is-horizontal .bal-data-item .bal-data-value{-ms-flex-preferred-size:100%;flex-basis:100%;width:100%;-ms-flex-item-align:start;align-self:flex-start}}";
+
+const Data = class {
+  constructor(hostRef) {
+    index.registerInstance(this, hostRef);
+    this.inputElements = ['bal-data-item'];
+    this.border = false;
+    this.horizontal = false;
+  }
+  borderHandler() {
+    this.updateProps([...this.inputElements], 'border');
+  }
+  updateProps(selectors, key) {
+    const value = this[key];
+    if (value !== undefined) {
+      this.notifyComponents(selectors, input => (input[key] = value));
+    }
+  }
+  notifyComponents(selectors, callback) {
+    const components = this.element.querySelectorAll(selectors.join(', '));
+    components.forEach((c) => callback(c));
+  }
+  componentWillLoad() {
+    this.borderHandler();
+  }
+  render() {
+    const block = bem.BEM.block('data');
+    return (index.h(index.Host, { class: Object.assign(Object.assign(Object.assign({}, block.class()), block.modifier('has-border').class(this.border)), block.modifier('is-horizontal').class(this.horizontal)) }, index.h("slot", null)));
+  }
+  get element() { return index.getElement(this); }
+  static get watchers() { return {
+    "border": ["borderHandler"]
+  }; }
+};
+Data.style = {
+  css: balDataCss
+};
+
+const DataItem = class {
+  constructor(hostRef) {
+    index.registerInstance(this, hostRef);
+    this.disabled = false;
+    this.border = false;
+  }
+  render() {
+    const element = bem.BEM.block('data-item');
+    return (index.h(index.Host, { class: Object.assign(Object.assign(Object.assign({}, element.class()), element.modifier('is-disabled').class(this.disabled)), element.modifier('has-border').class(this.border)) }, index.h("slot", null)));
+  }
+};
+
+const DataLabel = class {
+  constructor(hostRef) {
+    index.registerInstance(this, hostRef);
+    this.required = false;
+  }
+  render() {
+    return (index.h(index.Host, { class: Object.assign({}, bem.BEM.block('data-label').class()) }, index.h("slot", null), this.required ? '*' : ''));
+  }
+};
+
+const DataValue = class {
+  constructor(hostRef) {
+    index.registerInstance(this, hostRef);
+    this.balClick = index.createEvent(this, "balClick", 7);
+    this.balFocus = index.createEvent(this, "balFocus", 7);
+    this.balBlur = index.createEvent(this, "balBlur", 7);
+    this.editable = false;
+    this.disabled = false;
+    this.multiline = false;
+  }
+  onClickHandler(ev) {
+    this.balClick.emit(ev);
+    const input = this.el.querySelector('bal-input');
+    if (!index$1.lodash_isnil(input)) {
+      input.setFocus();
+    }
+  }
+  render() {
+    const block = bem.BEM.block('data-value');
+    const buttonEl = block.element('button');
+    return (index.h(index.Host, { class: Object.assign(Object.assign(Object.assign({}, block.class()), block.modifier('is-editable').class(this.editable)), block.modifier('is-multiline').class(this.multiline)) }, index.h("div", null, index.h("slot", null)), index.h("bal-button", { class: Object.assign({}, buttonEl.class()), "data-testid": "bal-data-value-button", square: true, outlined: true, color: "text", size: "small", icon: "edit", disabled: this.disabled, onBalBlur: _ => this.balBlur.emit(), onBalFocus: _ => this.balFocus.emit(), onClick: ev => this.onClickHandler(ev) })));
+  }
+  get el() { return index.getElement(this); }
+};
+
+exports.bal_data = Data;
+exports.bal_data_item = DataItem;
+exports.bal_data_label = DataLabel;
+exports.bal_data_value = DataValue;

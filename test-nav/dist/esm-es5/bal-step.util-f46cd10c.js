@@ -1,0 +1,1 @@
+var newBalStepOption=function(e){return Object.assign({href:"",target:"_self",active:false,disabled:false,done:false,hidden:false,failed:false,prevent:false},e)};export{newBalStepOption as n};

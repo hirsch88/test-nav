@@ -1,0 +1,1 @@
+import{r as t,h as a,H as s}from"./p-e85eaa4e.js";import{B as r}from"./p-61996a75.js";const o=class{constructor(a){t(this,a)}render(){const t=r.block("nav").element("meta").element("start");return a(s,{class:Object.assign({},t.class())},a("slot",null))}};export{o as bal_navigation_meta_start}

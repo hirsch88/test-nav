@@ -1,0 +1,1 @@
+import{r as a,h as s,H as t}from"./p-e85eaa4e.js";import{B as r}from"./p-61996a75.js";const n=class{constructor(s){a(this,s),this.ariaLabelMeta=""}render(){const a=r.block("nav").element("meta");return s(t,{class:Object.assign({},a.class())},s("nav",{class:"container",role:"navigation","aria-label":this.ariaLabelMeta},s("slot",null)))}};export{n as bal_navigation_meta}

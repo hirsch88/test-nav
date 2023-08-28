@@ -1,0 +1,1 @@
+import{g as globalScript}from"./global-9b4fc38d.js";var globalScripts=globalScript;export{globalScripts as g};

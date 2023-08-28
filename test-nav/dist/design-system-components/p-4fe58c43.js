@@ -1,0 +1,1 @@
+import{h as n,i as t}from"./p-97b591c9.js";function c(){return function(c){const{connectedCallback:i,disconnectedCallback:o}=c;c.connectedCallback=function(){return n(this),i&&i.call(this)},c.disconnectedCallback=function(){return t(this),o&&o.call(this)}}}export{c as L}

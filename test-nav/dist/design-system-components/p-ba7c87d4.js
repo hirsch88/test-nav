@@ -1,0 +1,1 @@
+const d=d=>{const o=d.formEl.querySelectorAll(d.selector||".bal-field--invalid"),i=Array.from(o);if(i.length>0){const d=i[0];if(d){const o=d.closest("bal-field");o&&o.scrollIntoView&&o.scrollIntoView()}}},o={controlId:void 0,labelId:void 0,messageId:void 0};export{o as d,d as s}

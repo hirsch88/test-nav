@@ -1,0 +1,37 @@
+import { EventEmitter } from '../../stencil-public-runtime';
+import { BalStepOption } from './bal-step.type';
+import { Loggable, LogInstance } from '../../utils/log';
+import { BalMutationObserver } from '../../utils/mutation';
+import { BalBreakpointObserver, BalBreakpoints } from '../../utils/breakpoints';
+export declare class Steps implements Loggable, BalMutationObserver, BalBreakpointObserver {
+  el: HTMLElement;
+  private stepsId;
+  isMobile: boolean;
+  store: BalStepOption[];
+  log: LogInstance;
+  createLogger(log: LogInstance): void;
+  options: BalStepOption[];
+  protected optionChanged(): Promise<void>;
+  clickable: boolean;
+  debounce: number;
+  protected debounceChanged(): void;
+  value?: string;
+  protected valueChanged(newValue?: string, oldValue?: string): Promise<void>;
+  balChange: EventEmitter<BalEvents.BalTabsChangeDetail>;
+  connectedCallback(): void;
+  componentDidLoad(): void;
+  mutationObserverActive: boolean;
+  mutationListener(): void;
+  breakpointListener(breakpoints: BalBreakpoints): void;
+  select(step: BalStepOption): Promise<void>;
+  getOptionByValue(value: string): Promise<BalStepOption | undefined>;
+  private get items();
+  private getStepOptions;
+  private updateStore;
+  private setActiveItem;
+  private setActiveContent;
+  private isActive;
+  private onOptionChange;
+  private onSelectTab;
+  render(): any;
+}

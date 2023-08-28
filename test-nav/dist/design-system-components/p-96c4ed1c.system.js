@@ -1,0 +1,1 @@
+System.register(["./p-3fbfa32a.system.js"],(function(t){"use strict";var n;return{setters:[function(t){n=t.a}],execute:function(){t("L",c);function c(){return function(t,c,e){var a=t.connectedCallback,i=t.disconnectedCallback;t.connectedCallback=function(){n.attach(this);return a&&a.call(this)};t.disconnectedCallback=function(){n.detach(this);return i&&i.call(this)}}}}}}));

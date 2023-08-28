@@ -1,0 +1,1 @@
+const e=e=>Object.assign({href:"",target:"_self",active:!1,disabled:!1,done:!1,hidden:!1,failed:!1,prevent:!1},e);export{e as n}

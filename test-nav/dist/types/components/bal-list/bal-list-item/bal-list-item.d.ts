@@ -1,0 +1,47 @@
+import { EventEmitter, ComponentInterface } from '../../../stencil-public-runtime';
+import { BalConfigObserver, BalConfigState } from '../../../utils/config';
+import { Loggable, LogInstance } from '../../../utils/log';
+import { AccordionState } from '../../../interfaces';
+export declare class ListItem implements ComponentInterface, BalConfigObserver, Loggable {
+  static selectors: {
+    accordionHead: string;
+    accordionBody: string;
+    accordionBodyWrapper: string;
+  };
+  private currentRaf;
+  private accordionOpen;
+  private animated;
+  el: HTMLElement;
+  state: AccordionState;
+  log: LogInstance;
+  createLogger(log: LogInstance): void;
+  disabled: boolean;
+  clickable: boolean;
+  selected: boolean;
+  accordion: boolean;
+  subAccordionItem: boolean;
+  href: string;
+  target: BalProps.BalListItemTarget;
+  download?: string;
+  balNavigate: EventEmitter<BalEvents.BalListItemNavigateDetail>;
+  balGroupStateChanged: EventEmitter<BalEvents.BalListItemGroupStateChangedDetail>;
+  balWillAnimate: EventEmitter<BalEvents.BalListItemWillAnimateDetail>;
+  balDidAnimate: EventEmitter<BalEvents.BalListItemDidAnimateDetail>;
+  connectedCallback(): void;
+  componentDidLoad(): void;
+  disconnectedCallback(): void;
+  private accordionChanged;
+  configChanged(state: BalConfigState): Promise<void>;
+  present(): Promise<void>;
+  dismiss(ignoreNested?: boolean): Promise<void>;
+  toggle(): Promise<void>;
+  private addEventListenerAccordionChange;
+  private removeEventListenerAccordionChange;
+  private updateHead;
+  private updateState;
+  private expandAccordion;
+  private collapseAccordion;
+  private shouldAnimate;
+  private onClickTrigger;
+  render(): any;
+}

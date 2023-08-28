@@ -1,0 +1,30 @@
+import { EventEmitter, ComponentInterface } from '../../stencil-public-runtime';
+import { BalBreakpointObserver, BalBreakpoints } from '../../utils/breakpoints';
+import { BalConfigState } from '../../interfaces';
+import { BalLanguage } from '../../utils/config';
+export declare class Pagination implements ComponentInterface, BalBreakpointObserver {
+  el: HTMLBalPaginationElement;
+  _value: number;
+  isMobile: boolean;
+  language: BalLanguage;
+  interface: BalProps.BalPaginationInterface;
+  disabled: boolean;
+  value: number;
+  valueChanged(newValue: number): void;
+  totalPages: number;
+  pageRange: number;
+  sticky: boolean;
+  top: number;
+  topValueChanged(newValue: number): void;
+  balChangeEventEmitter: EventEmitter<BalEvents.BalPaginationChangeDetail>;
+  componentWillLoad(): void;
+  breakpointListener(breakpoints: BalBreakpoints): void;
+  next(): Promise<void>;
+  previous(): Promise<void>;
+  configChanged(state: BalConfigState): Promise<void>;
+  selectPage(pageNumber: number): void;
+  private getItems;
+  renderEllipsisElement(): any;
+  renderPageElement(pageNumber: number): any;
+  render(): any;
+}

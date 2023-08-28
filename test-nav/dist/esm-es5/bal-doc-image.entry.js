@@ -1,0 +1,1 @@
+import{r as registerInstance,h,H as Host}from"./index-e015dbc8.js";var BalDocImage=function(){function t(t){registerInstance(this,t);this.src="";this.text=""}t.prototype.render=function(){return h(Host,{class:"bal-app"},h("p",{style:{textAlign:"center"}},h("img",{loading:"lazy",src:this.src,alt:this.text})))};return t}();export{BalDocImage as bal_doc_image};

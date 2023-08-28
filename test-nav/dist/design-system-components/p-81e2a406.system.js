@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){var t=e("n",(function(e){return Object.assign({href:"",target:"_self",bubble:false,active:false,disabled:false,hidden:false,prevent:false,navigate:undefined},e)}))}}}));

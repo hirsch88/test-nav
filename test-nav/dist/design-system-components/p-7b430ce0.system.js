@@ -1,0 +1,1 @@
+System.register(["./p-cf04c148.system.js"],(function(t){"use strict";var n,c;return{setters:[function(t){n=t.h;c=t.i}],execute:function(){t("L",e);function e(){return function(t,e,i){var s=t.connectedCallback,r=t.disconnectedCallback;t.connectedCallback=function(){n(this);return s&&s.call(this)};t.disconnectedCallback=function(){c(this);return r&&r.call(this)}}}}}}));

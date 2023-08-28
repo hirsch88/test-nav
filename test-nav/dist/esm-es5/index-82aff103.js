@@ -1,0 +1,1 @@
+function isNil(i){return i==null}var lodash_isnil=isNil;export{lodash_isnil as l};

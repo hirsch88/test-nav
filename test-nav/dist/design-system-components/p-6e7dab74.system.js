@@ -1,0 +1,1 @@
+System.register([],(function(o){"use strict";return{execute:function(){var n=o("i",{de:{optional:" (optional)"},en:{optional:" (optional)"},fr:{optional:" (optionnel)"},it:{optional:" (opzionale)"},nl:{optional:" (optioneel)"},es:{optional:" (opcional)"},pl:{optional:" (opcjonalnie)"},pt:{optional:" (opcional)"},sv:{optional:" (frivillig)"},fi:{optional:" (valinnainen)"}})}}}));

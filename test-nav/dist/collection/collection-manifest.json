@@ -1,0 +1,452 @@
+{
+  "entries": [
+    "./components/bal-popover/bal-popover.js",
+    "./components/bal-accordion/bal-accordion.js",
+    "./components/bal-accordion/bal-accordion-details/bal-accordion-details.js",
+    "./components/bal-accordion/bal-accordion-summary/bal-accordion-summary.js",
+    "./components/bal-accordion/bal-accordion-trigger/bal-accordion-trigger.js",
+    "./components/bal-app/bal-app.js",
+    "./components/bal-badge/bal-badge.js",
+    "./components/bal-button/bal-button.js",
+    "./components/bal-button/bal-button-group/bal-button-group.js",
+    "./components/bal-card/bal-card.js",
+    "./components/bal-card/bal-card-actions/bal-card-actions.js",
+    "./components/bal-card/bal-card-button/bal-card-button.js",
+    "./components/bal-card/bal-card-content/bal-card-content.js",
+    "./components/bal-card/bal-card-subtitle/bal-card-subtitle.js",
+    "./components/bal-card/bal-card-title/bal-card-title.js",
+    "./components/bal-carousel/bal-carousel.js",
+    "./components/bal-carousel/bal-carousel-item/bal-carousel-item.js",
+    "./components/bal-close/bal-close.js",
+    "./components/bal-data/bal-data.js",
+    "./components/bal-data/bal-data-item/bal-data-item.js",
+    "./components/bal-data/bal-data-label/bal-data-label.js",
+    "./components/bal-data/bal-data-value/bal-data-value.js",
+    "./components/bal-footer/bal-footer.js",
+    "./components/form/bal-select/bal-select.js",
+    "./components/bal-hint/bal-hint.js",
+    "./components/bal-hint/bal-hint-text/bal-hint-text.js",
+    "./components/bal-hint/bal-hint-title/bal-hint-title.js",
+    "./components/bal-icon/bal-icon.js",
+    "./components/bal-list/bal-list.js",
+    "./components/bal-list/bal-list-item/bal-list-item.js",
+    "./components/bal-list/bal-list-item-accordion-body/bal-list-item-accordion-body.js",
+    "./components/bal-list/bal-list-item-accordion-head/bal-list-item-accordion-head.js",
+    "./components/bal-list/bal-list-item-content/bal-list-item-content.js",
+    "./components/bal-list/bal-list-item-icon/bal-list-item-icon.js",
+    "./components/bal-list/bal-list-item-subtitle/bal-list-item-subtitle.js",
+    "./components/bal-list/bal-list-item-title/bal-list-item-title.js",
+    "./components/bal-logo/bal-logo.js",
+    "./components/bal-nav/bal-nav.js",
+    "./components/bal-nav/bal-nav-link/bal-nav-link.js",
+    "./components/bal-nav/bal-nav-link-grid/bal-nav-link-grid.js",
+    "./components/bal-nav/bal-nav-link-grid-col/bal-nav-link-grid-col.js",
+    "./components/bal-nav/bal-nav-link-group/bal-nav-link-group.js",
+    "./components/bal-nav/bal-nav-menu-bar/bal-nav-menu-bar.js",
+    "./components/bal-nav/bal-nav-menu-flyout/bal-nav-menu-flyout.js",
+    "./components/bal-nav/bal-nav-meta-bar/bal-nav-meta-bar.js",
+    "./components/bal-navbar/bal-navbar.js",
+    "./components/bal-navbar/bal-navbar-brand/bal-navbar-brand.js",
+    "./components/bal-navbar/bal-navbar-menu/bal-navbar-menu.js",
+    "./components/bal-navbar/bal-navbar-menu-end/bal-navbar-menu-end.js",
+    "./components/bal-navbar/bal-navbar-menu-start/bal-navbar-menu-start.js",
+    "./components/bal-navigation/bal-navigation.js",
+    "./components/bal-navigation/bal-navigation-level-block/bal-navigation-level-block.js",
+    "./components/bal-navigation/bal-navigation-level-block-item/bal-navigation-level-block-item.js",
+    "./components/bal-navigation/bal-navigation-level-main/bal-navigation-level-main.js",
+    "./components/bal-navigation/bal-navigation-level-meta/bal-navigation-level-meta.js",
+    "./components/bal-navigation/bal-navigation-levels/bal-navigation-levels.js",
+    "./components/bal-navigation/bal-navigation-main/bal-navigation-main.js",
+    "./components/bal-navigation/bal-navigation-main-body/bal-navigation-main-body.js",
+    "./components/bal-navigation/bal-navigation-main-head/bal-navigation-main-head.js",
+    "./components/bal-navigation/bal-navigation-menu/bal-navigation-menu.js",
+    "./components/bal-navigation/bal-navigation-menu-list/bal-navigation-menu-list.js",
+    "./components/bal-navigation/bal-navigation-menu-list-item/bal-navigation-menu-list-item.js",
+    "./components/bal-navigation/bal-navigation-meta/bal-navigation-meta.js",
+    "./components/bal-navigation/bal-navigation-meta-end/bal-navigation-meta-end.js",
+    "./components/bal-navigation/bal-navigation-meta-start/bal-navigation-meta-start.js",
+    "./components/bal-navigation/bal-navigation-popover/bal-navigation-popover.js",
+    "./components/bal-pagination/bal-pagination.js",
+    "./components/bal-popover/bal-popover-content/bal-popover-content.js",
+    "./components/bal-popup/bal-popup.js",
+    "./components/bal-progress-bar/bal-progress-bar.js",
+    "./components/bal-shape/bal-shape.js",
+    "./components/bal-spinner/bal-spinner.js",
+    "./components/bal-stage/bal-stage.js",
+    "./components/bal-stage/bal-stage-back-link/bal-stage-back-link.js",
+    "./components/bal-stage/bal-stage-body/bal-stage-body.js",
+    "./components/bal-stage/bal-stage-foot/bal-stage-foot.js",
+    "./components/bal-stage/bal-stage-head/bal-stage-head.js",
+    "./components/bal-stage/bal-stage-image/bal-stage-image.js",
+    "./components/bal-steps/bal-steps.js",
+    "./components/bal-steps/bal-step-item/bal-step-item.js",
+    "./components/bal-table/bal-table.js",
+    "./components/bal-tabs/bal-tabs.js",
+    "./components/bal-tabs/bal-tab-item/bal-tab-item.js",
+    "./components/bal-tag/bal-tag.js",
+    "./components/bal-tag/bal-tag-group/bal-tag-group.js",
+    "./components/docs/bal-doc-app/bal-doc-app.js",
+    "./components/docs/bal-doc-banner/bal-doc-banner.js",
+    "./components/docs/bal-doc-code-sandbox/bal-doc-code-sandbox.js",
+    "./components/docs/bal-doc-color/bal-doc-color.js",
+    "./components/docs/bal-doc-download/bal-doc-download.js",
+    "./components/docs/bal-doc-github/bal-doc-github.js",
+    "./components/docs/bal-doc-icons/bal-doc-icons.js",
+    "./components/docs/bal-doc-image/bal-doc-image.js",
+    "./components/docs/bal-doc-lead/bal-doc-lead.js",
+    "./components/docs/bal-doc-link-list/bal-doc-link-list.js",
+    "./components/docs/bal-doc-link-list-item/bal-doc-link-list-item.js",
+    "./components/docs/bal-doc-preview/bal-doc-preview.js",
+    "./components/docs/bal-doc-shades/bal-doc-shades.js",
+    "./components/docs/bal-doc-support-color/bal-doc-support-color.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-border-colors.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-border-radius.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-border.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-breakpoints.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-colors.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-containers.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-font-colors.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-font-sizes.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-font-weight.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-font.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-shadow.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-spacing-sizes.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-spacing.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-text-shadow.js",
+    "./components/docs/bal-doc-tokens/bal-doc-tokens-z-index.js",
+    "./components/form/bal-checkbox/bal-checkbox.js",
+    "./components/form/bal-checkbox/bal-checkbox-button/bal-checkbox-button.js",
+    "./components/form/bal-checkbox/bal-checkbox-group/bal-checkbox-group.js",
+    "./components/form/bal-datepicker/bal-datepicker.js",
+    "./components/form/bal-field/bal-field.js",
+    "./components/form/bal-field/bal-field-control/bal-field-control.js",
+    "./components/form/bal-field/bal-field-hint/bal-field-hint.js",
+    "./components/form/bal-field/bal-field-label/bal-field-label.js",
+    "./components/form/bal-field/bal-field-message/bal-field-message.js",
+    "./components/form/bal-file-upload/bal-file-upload.js",
+    "./components/form/bal-form/bal-form.js",
+    "./components/form/bal-form-grid/bal-form-grid.js",
+    "./components/form/bal-form-grid/bal-form-col/bal-form-col.js",
+    "./components/form/bal-input/bal-input.js",
+    "./components/form/bal-input-group/bal-input-group.js",
+    "./components/form/bal-input-slider/bal-input-slider.js",
+    "./components/form/bal-input-stepper/bal-input-stepper.js",
+    "./components/form/bal-number-input/bal-number-input.js",
+    "./components/form/bal-radio/bal-radio.js",
+    "./components/form/bal-radio/bal-radio-button/bal-radio-button.js",
+    "./components/form/bal-radio/bal-radio-group/bal-radio-group.js",
+    "./components/form/bal-select/bal-select-option/bal-select-option.js",
+    "./components/form/bal-textarea/bal-textarea.js",
+    "./components/form/bal-time-input/bal-time-input.js",
+    "./components/layout/bal-content/bal-content.js",
+    "./components/layout/bal-divider/bal-divider.js",
+    "./components/layout/bal-stack/bal-stack.js",
+    "./components/notice/bal-modal/bal-modal.js",
+    "./components/notice/bal-modal/bal-modal-body/bal-modal-body.js",
+    "./components/notice/bal-modal/bal-modal-header/bal-modal-header.js",
+    "./components/notice/bal-notices/bal-notices.js",
+    "./components/notice/bal-notification/bal-notification.js",
+    "./components/notice/bal-sheet/bal-sheet.js",
+    "./components/notice/bal-snackbar/bal-snackbar.js",
+    "./components/notice/bal-toast/bal-toast.js",
+    "./components/typography/bal-heading/bal-heading.js",
+    "./components/typography/bal-label/bal-label.js",
+    "./components/typography/bal-text/bal-text.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "3.2.2",
+    "typescriptVersion": "4.9.5"
+  },
+  "collections": [],
+  "bundles": [
+    {
+      "components": [
+        "bal-app"
+      ]
+    },
+    {
+      "components": [
+        "bal-badge"
+      ]
+    },
+    {
+      "components": [
+        "bal-close"
+      ]
+    },
+    {
+      "components": [
+        "bal-footer"
+      ]
+    },
+    {
+      "components": [
+        "bal-icon"
+      ]
+    },
+    {
+      "components": [
+        "bal-logo"
+      ]
+    },
+    {
+      "components": [
+        "bal-pagination"
+      ]
+    },
+    {
+      "components": [
+        "bal-shape"
+      ]
+    },
+    {
+      "components": [
+        "bal-spinner"
+      ]
+    },
+    {
+      "components": [
+        "bal-table"
+      ]
+    },
+    {
+      "components": [
+        "bal-datepicker"
+      ]
+    },
+    {
+      "components": [
+        "bal-file-upload"
+      ]
+    },
+    {
+      "components": [
+        "bal-form"
+      ]
+    },
+    {
+      "components": [
+        "bal-input"
+      ]
+    },
+    {
+      "components": [
+        "bal-input-group"
+      ]
+    },
+    {
+      "components": [
+        "bal-input-slider"
+      ]
+    },
+    {
+      "components": [
+        "bal-input-stepper"
+      ]
+    },
+    {
+      "components": [
+        "bal-number-input"
+      ]
+    },
+    {
+      "components": [
+        "bal-textarea"
+      ]
+    },
+    {
+      "components": [
+        "bal-time-input"
+      ]
+    },
+    {
+      "components": [
+        "bal-notices"
+      ]
+    },
+    {
+      "components": [
+        "bal-notification"
+      ]
+    },
+    {
+      "components": [
+        "bal-sheet"
+      ]
+    },
+    {
+      "components": [
+        "bal-snackbar"
+      ]
+    },
+    {
+      "components": [
+        "bal-toast"
+      ]
+    },
+    {
+      "components": [
+        "bal-button",
+        "bal-button-group"
+      ]
+    },
+    {
+      "components": [
+        "bal-heading",
+        "bal-text"
+      ]
+    },
+    {
+      "components": [
+        "bal-carousel",
+        "bal-carousel-item"
+      ]
+    },
+    {
+      "components": [
+        "bal-popover",
+        "bal-popover-content"
+      ]
+    },
+    {
+      "components": [
+        "bal-tab-item",
+        "bal-tabs"
+      ]
+    },
+    {
+      "components": [
+        "bal-tag",
+        "bal-tag-group"
+      ]
+    },
+    {
+      "components": [
+        "bal-checkbox",
+        "bal-checkbox-group"
+      ]
+    },
+    {
+      "components": [
+        "bal-form-col",
+        "bal-form-grid"
+      ]
+    },
+    {
+      "components": [
+        "bal-radio",
+        "bal-radio-group"
+      ]
+    },
+    {
+      "components": [
+        "bal-select",
+        "bal-select-option"
+      ]
+    },
+    {
+      "components": [
+        "bal-hint",
+        "bal-hint-text",
+        "bal-hint-title"
+      ]
+    },
+    {
+      "components": [
+        "bal-modal",
+        "bal-modal-body",
+        "bal-modal-header"
+      ]
+    },
+    {
+      "components": [
+        "bal-accordion",
+        "bal-accordion-details",
+        "bal-accordion-summary",
+        "bal-accordion-trigger"
+      ]
+    },
+    {
+      "components": [
+        "bal-data",
+        "bal-data-item",
+        "bal-data-label",
+        "bal-data-value"
+      ]
+    },
+    {
+      "components": [
+        "bal-navbar",
+        "bal-navbar-brand",
+        "bal-navbar-menu",
+        "bal-navbar-menu-end",
+        "bal-navbar-menu-start"
+      ]
+    },
+    {
+      "components": [
+        "bal-field",
+        "bal-field-control",
+        "bal-field-hint",
+        "bal-field-label",
+        "bal-field-message"
+      ]
+    },
+    {
+      "components": [
+        "bal-card",
+        "bal-card-actions",
+        "bal-card-button",
+        "bal-card-content",
+        "bal-card-subtitle",
+        "bal-card-title"
+      ]
+    },
+    {
+      "components": [
+        "bal-navigation",
+        "bal-navigation-level-block",
+        "bal-navigation-level-block-item",
+        "bal-navigation-level-main",
+        "bal-navigation-level-meta",
+        "bal-navigation-levels"
+      ]
+    },
+    {
+      "components": [
+        "bal-stage",
+        "bal-stage-back-link",
+        "bal-stage-body",
+        "bal-stage-foot",
+        "bal-stage-head",
+        "bal-stage-image"
+      ]
+    },
+    {
+      "components": [
+        "bal-list",
+        "bal-list-item",
+        "bal-list-item-accordion-body",
+        "bal-list-item-accordion-head",
+        "bal-list-item-content",
+        "bal-list-item-icon",
+        "bal-list-item-subtitle",
+        "bal-list-item-title"
+      ]
+    },
+    {
+      "components": [
+        "bal-nav",
+        "bal-nav-link",
+        "bal-nav-link-grid",
+        "bal-nav-link-grid-col",
+        "bal-nav-link-group",
+        "bal-nav-menu-bar",
+        "bal-nav-menu-flyout",
+        "bal-nav-meta-bar"
+      ]
+    }
+  ],
+  "global": "global.js"
+}

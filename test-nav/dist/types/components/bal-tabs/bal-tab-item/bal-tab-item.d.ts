@@ -1,0 +1,40 @@
+import { EventEmitter } from '../../../stencil-public-runtime';
+import { Attributes } from '../../../utils/attributes';
+import { BalTabOption } from '../bal-tab.type';
+export declare class TabItem {
+  private inheritAttributes;
+  private tabPanelID;
+  el: HTMLElement;
+  isActive: boolean;
+  active: boolean;
+  value: string;
+  label: string;
+  href: string;
+  target: BalProps.BalButtonTarget;
+  bubble: boolean | string;
+  disabled: boolean;
+  hidden: boolean;
+  prevent: boolean;
+  icon?: string;
+  balNavigate: EventEmitter<BalEvents.BalTabItemNavigateDetail>;
+  componentWillLoad(): void;
+  getOptions(): Promise<BalTabOption>;
+  setActive(active: boolean): Promise<void>;
+  get options(): {
+    tabPanelID: string;
+    value: string;
+    icon: string | undefined;
+    label: string;
+    href: string;
+    target: BalProps.BalButtonTarget;
+    active: boolean;
+    disabled: boolean;
+    hidden: boolean;
+    bubble: string | boolean;
+    passed: boolean;
+    prevent: boolean;
+    navigate: EventEmitter<MouseEvent>;
+    trackingData: Attributes;
+  };
+  render(): any;
+}
